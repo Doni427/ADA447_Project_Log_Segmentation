@@ -1,0 +1,11 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+data/Linux_2k.log
+data/*.csv
+data/*.json
+models/
+results/
+checkpoint-*/
+.DS_Store
