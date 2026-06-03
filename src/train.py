@@ -97,7 +97,7 @@ def main():
     output_dir = "./models/fine_tuned_logbert/"
     model.save_pretrained(output_dir)
     tokenizer.save_pretrained(output_dir)
-    print(f"✅ Model artifact exported to {output_dir}")
+    print(f" Model artifact exported to {output_dir}")
 
 if __name__ == "__main__":
     main()

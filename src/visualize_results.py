@@ -13,7 +13,7 @@ def find_latest_trainer_state(results_dir="./results"):
         
     if not state_files:
         raise FileNotFoundError(
-            f"❌ '{results_dir}' dizini altında 'trainer_state.json' bulunamadı. "
+            f"'{results_dir}' dizini altında 'trainer_state.json' bulunamadı. "
             "Lütfen train.py scriptinin başarıyla çalıştığından ve sonuçları ürettiğinden emin olun."
         )
     # En son modifiye edilen dosyayı seç

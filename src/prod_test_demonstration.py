@@ -4,13 +4,13 @@ import json
 import torch
 from transformers import DistilBertTokenizerFast, DistilBertForTokenClassification
 
-# Terminal Renk Kodları (ANSI Escape Sequences)
-CLR_RAW = "\033[91m"       # Açık Kırmızı
-CLR_TMP = "\033[92m"       # Açık Yeşil
-CLR_PRM = "\033[96m"       # Açık Camgöbeği
-CLR_RST = "\033[0m"        # Reset
-CLR_BLD = "\033[1m"        # Bold
-CLR_LINE = "\033[90m"      # Gri Çizgi
+
+CLR_RAW = "\033[91m"       
+CLR_TMP = "\033[92m"      
+CLR_PRM = "\033[96m"       
+CLR_RST = "\033[0m"        
+CLR_BLD = "\033[1m"       
+CLR_LINE = "\033[90m"      
 
 class LiveProductionParser:
     def __init__(self, model_dir="./models/fine_tuned_logbert/"):
@@ -100,7 +100,7 @@ def run_live_demo():
         "2026-06-03 11:27:01 ERROR su pam_unix authentication failure logname= uid=0 euid=0 tty=tty1 ruser= rhost=192.168.1.100"
     ]
     
-    print(f"\n{CLR_BLD}🚀 STARTING LIVE PRODUCTION PARSING DEMONSTRATION 🚀{CLR_RST}")
+    print(f"\n{CLR_BLD}STARTING LIVE PRODUCTION PARSING DEMONSTRATION {CLR_RST}")
     print(f"{CLR_LINE}================================================================================{CLR_RST}")
     
     try:
@@ -112,7 +112,7 @@ def run_live_demo():
             print(f"{CLR_BLD}[EXTRACTED PARAMS]:{CLR_RST}  {CLR_PRM}{res['parameters']}{CLR_RST}")
             print(f"{CLR_LINE}--------------------------------------------------------------------------------{CLR_RST}")
     except Exception as e:
-        print(f"\033[91m❌ Gösterim hatası: {e}\033[0m")
+        print(f"\033[91m Gösterim hatası: {e}\033[0m")
 
 if __name__ == "__main__":
     run_live_demo()

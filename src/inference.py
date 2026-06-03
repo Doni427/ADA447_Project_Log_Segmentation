@@ -82,7 +82,7 @@ if __name__ == "__main__":
         parser = LogParserPipeline()
         sample_log = "2026-06-03 10:01:28 ERROR connection refused to 10.43.0.10:9090"
         result = parser.parse_log(sample_log)
-        print("\n🔮 Timestamp Protected Inference Output:")
+        print("\nTimestamp Protected Inference Output:")
         print(json.dumps(result, indent=4))
     except Exception as e:
         print(f"Hata oluştu: {e}")
